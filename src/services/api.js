@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080', // URL do backend
+  baseURL: import.meta.env.VITE_API_URL, // agora usa variável da Vercel
 });
 
 export default api;
+
